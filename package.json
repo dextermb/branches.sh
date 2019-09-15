@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "author": "Dexter Marks-Barber <dexter@marks-barber.co.uk>",
+  "homepage": "https://github.com/dextermb/branches.sh#readme",
+  "license": "LGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dextermb/branches.sh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dextermb/branches.sh/issues"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "standard"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": [
+        "npm run lint"
+      ]
+    }
+  },
+  "standard": {
+    "ignore": [
+      ".next",
+      "styles"
+    ]
+  },
+  "dependencies": {
+    "@ninetynine/react-notices": "^1.4.0",
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^9.0.5",
+    "node-sass": "^4.12.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "husky": "^3.0.5",
+    "standard": "^14.3.0"
+  }
+}
